@@ -39,7 +39,7 @@ const AddOrder = () => {
     console.log(formData);
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/orders/create",
+        "https://admin-panel-oc0r.onrender.com/api/v1/orders/create",
         {
           method: "POST",
           headers: {

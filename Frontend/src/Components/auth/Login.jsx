@@ -26,7 +26,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/users/login",
+        "https://admin-panel-oc0r.onrender.com/api/v1/users/login",
         formData
       );
       console.log("Response from backend:", response.data);

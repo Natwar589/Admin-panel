@@ -38,7 +38,7 @@ const AddShippingDetails = () => {
     formData.shipping_id = shippingId;
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/shippingDetails/create",
+        "https://admin-panel-oc0r.onrender.com/api/v1/shippingDetails/create",
         {
           method: "POST",
           headers: {

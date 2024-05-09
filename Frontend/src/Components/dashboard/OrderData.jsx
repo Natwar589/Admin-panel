@@ -8,7 +8,7 @@ const OrderData = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/v1/orders/getAll"
+          "https://admin-panel-oc0r.onrender.com/api/v1/orders/getAll"
         );
         setOrders(response.data);
       } catch (error) {
@@ -24,7 +24,7 @@ const OrderData = () => {
     try {
       // Make DELETE request to backend API to delete customer
       await axios.delete(
-        `http://localhost:8080/api/v1/orders/deleteById/${orderId}`
+        `https://admin-panel-oc0r.onrender.com/api/v1/orders/deleteById/${orderId}`
       );
 
       // Update state to reflect the deleted customer

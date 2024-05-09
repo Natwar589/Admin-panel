@@ -9,7 +9,7 @@ const ShowCustomerData = () => {
     const fetchCustomers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/v1/customers/getallcustomer"
+          "https://admin-panel-oc0r.onrender.com/api/v1/customers/getallcustomer"
         );
         setCustomers(response.data);
       } catch (error) {
@@ -25,7 +25,7 @@ const ShowCustomerData = () => {
     try {
       // Make DELETE request to backend API to delete customer
       await axios.delete(
-        `http://localhost:8080/api/v1/customers/deletecustomerbyid/${customerId}`
+        `https://admin-panel-oc0r.onrender.com/api/v1/customers/deletecustomerbyid/${customerId}`
       );
 
       // Update state to reflect the deleted customer

@@ -20,7 +20,7 @@ const AddCustomer = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/customers/create-customer",
+        "https://admin-panel-oc0r.onrender.com/api/v1/customers/create-customer",
         {
           method: "POST",
           headers: {

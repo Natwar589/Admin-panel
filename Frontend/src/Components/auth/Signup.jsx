@@ -29,12 +29,11 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/users/register",
+        "https://admin-panel-oc0r.onrender.com/api/v1/users/register",
         formData
       );
       console.log("Response from backend:", response.data);
 
-      
       const { userName } = formData;
       localStorage.setItem("username", userName);
 
